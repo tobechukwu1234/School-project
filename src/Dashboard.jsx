@@ -2,16 +2,19 @@ import { Link } from 'react-router-dom';
 
 function Dashboard(){
 
+  const storedUserInfo = localStorage.getItem('userInfo')
+  const parsedUserInfo = JSON.parse(storedUserInfo)
+
   return(<>
     <div>
       <div className="grid lg:grid-cols-5 h-screen together">
 
      
         <div className="lg:col-span-1 p-6 bg-white left-sidebar">
-            <Link to='./'>
-            <h1 className="text-2xl font-bold lg:my-6 me:my-3 ml-6">
-            <a href="#" className="text-purple-800">CHRIS</a>
-            </h1>
+            <Link to="/">
+              <h1 className="text-2xl font-bold lg:my-6 me:my-3 ml-6">
+              <a href="#" className="text-purple-800">CHRIS</a>
+              </h1>
             </Link>
             
 
@@ -73,7 +76,7 @@ function Dashboard(){
               </div>
 
               <div>
-                <a href="#" className="text-purple-800 underline">Tobechukwu Omeje</a>
+                <a href="#" className="text-purple-800 underline">{parsedUserInfo.firstname} {parsedUserInfo.lastname}</a>
               </div>
 
             </div>

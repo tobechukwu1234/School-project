@@ -3,7 +3,7 @@ import {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 function Register(){
-  const [object, setObject] = useState({name: '', passcode: ''})
+  const [object, setObject] = useState({name: '', passcode: '', firsname: '', lasname: ''})
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
   const [firstname, setFirstname] = useState('')
