@@ -8,26 +8,28 @@ function Dashboard(){
 
      
         <div className="lg:col-span-1 p-6 bg-white left-sidebar">
-
+            <Link to='./'>
             <h1 className="text-2xl font-bold lg:my-6 me:my-3 ml-6">
             <a href="#" className="text-purple-800">CHRIS</a>
             </h1>
+            </Link>
+            
 
           <div className="flex flex-col lg:gap-80 mt-10">
             <div className="chan ml-10">
-              <h2 className="lg:py-4 me:py-2">
+              <h2 className="lg:py-4 me:py-3">
                 <a href="#" className="text-purple-800">Dashboard</a>
               </h2>
-              <h2 className="lg:py-4 me:py-2">
+              <h2 className="lg:py-4 me:py-3">
                 <a href="#">Classes</a>
               </h2>
-              <h2 className="lg:py-4 me:py-2">
+              <h2 className="lg:py-4 me:py-3">
                 <a href="#">Assesment</a>
               </h2>
-              <h2 className="lg:py-4 me:py-2">
+              <h2 className="lg:py-4 me:py-3">
                 <a href="#">Study books</a>
               </h2>
-              <h2 className="lg:py-4 me:py-2">
+              <h2 className="lg:py-4 me:py-3">
                 <a href="#">Log out</a>
               </h2>
             </div>
