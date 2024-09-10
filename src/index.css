@@ -1,0 +1,442 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial' sans-serif;
+}
+body{
+  background: rgb(247, 241, 247);
+  animation: fades 2s ease-in-out;
+}
+
+.banner{
+  background-image: url(/src/assets/boy and girl.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+}
+
+.cove{
+  background: #00000098;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.some h1{
+  color: rgb(205, 127, 209);
+}
+.some p{
+  color: rgb(206, 156, 207);
+  font-size: 20px;
+}
+.sign{
+  border: 3px solid rgb(209, 151, 211);
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+.sign a span, .portal a span{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.portal{
+  background-color: rgb(209, 151, 211);
+  border-radius: 5px;
+  padding: 6px 15px;
+  color: rgb(43, 41, 43);
+}
+.portal:hover{
+  background-color: rgb(189, 110, 192);
+  transition: .35s ease-in-out;
+}
+#apply{
+  background: rgb(209, 151, 211);
+  color: black;
+  padding: 10px 30px;
+}
+.apply{
+  background-color: rgb(247, 241, 247);
+  border: 3px solid rgb(245, 192, 235);
+  border-radius: 5px;
+  padding: 3px 15px;
+  animation: growShrink 3s infinite;
+}
+.apply a{
+  font-size: 16px;
+  font-weight: bold;
+}
+.class{
+  border: none;
+  border-radius: 20px;
+}
+.school h3{
+  color: rgb(138, 5, 105);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+}
+.school p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+.more{
+  position: absolute;
+  bottom: 10px;
+  right: 10px; 
+  border: 3px solid rgb(209, 151, 211);
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+.more a{
+  font-size: 16px;
+  font-weight: bold;
+}
+.info{
+  background: rgb(209, 151, 211);
+  color: black;
+  padding: 10px 30px;
+}
+.things input{
+  width: 34%;
+  margin: 0 20px 10px;
+  padding: 6px 8px;
+  border: 3px solid rgb(245, 192, 235);
+}
+.btn{
+  background-color: rgb(247, 241, 247);
+  border: 3px solid rgb(245, 192, 235);
+  width: 20%;
+  border-radius: 5px;
+  padding: 3px 15px;
+  margin-left: 30px;
+}
+.btn a{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.vision-container{
+  background: #fff;
+  padding: 20px;
+  margin-top: 60px;
+  position: relative;
+}
+.imagekk{
+  margin-right: 40px;
+  
+}
+.imagekk img{
+  border-radius: 40px;
+}
+.vision{
+  margin-top: 20px;
+  background: rgb(209, 151, 211);
+  padding: 20px 20px;
+  height:39%;
+  width: 50%;
+  border-radius: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.vision h2{
+  font-size: 21px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.vision p, .mission p{
+  font-size: 16px;
+}
+.mission{
+  bottom: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  padding: 20px 20px;
+  justify-content: center;
+  height:20%;
+  width: 50%;
+  border-radius: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mission img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  animation: growShrink 2s infinite;
+}
+@keyframes growShrink{
+    0%{
+      transform:  scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    };
+  }
+
+.mission h2{
+  font-size: 21px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.mission1{
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: rgb(209, 151, 211);
+  margin-right: 20px;
+  padding: 20px 20px;
+  height:40%;
+  width: 28%;
+  border-radius: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mission1 h2{
+  font-size: 21px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.parent h2{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.talks{
+  background: white;
+  padding: 0 30px;
+  /* display: none; */
+}
+.talks h3{
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  
+}
+.talks h3 span{
+  font-size: 35px;
+  color: purple;
+  font-weight: bolder;
+}
+.talks p{
+  text-align: left;
+  margin-bottom: 16px;
+  margin-left: 70px;
+  color: purple;
+  font-weight: bold;
+  font-size: 18px;
+}
+.display{
+  display: block;
+}
+.gal{
+  justify-content: center;
+  
+  margin: 0 50px;
+}
+footer{
+  background: rgb(205, 127, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fades 2s ease-in-out;
+}
+@keyframes fades {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.login, .register{
+  width: 28%;
+  max-width: 470px;
+  margin-top: 70px;
+  background: linear-gradient(135deg, rgb(205, 127, 209), rgb(146, 28, 175));
+  padding: 20px;
+  border-radius: 8px;
+}
+.log h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.box input{
+  
+  border-radius: 20px;
+  font-size: 18px;
+  outline: 0;
+  width: 100%;
+  height: 40%;
+  padding: 10px 15px;
+}
+.logBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logBtn button{
+  background-color: white;
+  padding: 8px 30px;
+  border-radius: 15px;
+  font-size: 17px;
+}
+.logBtn button:hover{
+  background-color: rgb(245, 196, 252);
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .login, .register{
+    width: 90%;
+  }
+  .register{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .some p{
+    font-size: 18px;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .banner{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+  }
+  .cove{
+    background: #000000b9;
+  }
+   
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .vision-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+  }
+  .imagekk{
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .imagekk img{
+    width: 100%;
+    border-radius: 5px;
+  }
+  .vision{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .mission1{
+    position: relative;
+    bottom: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .things input{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .things button{
+    width: 40%;
+    margin: 0;
+
+  }
+  .btn a{
+    font-size: 15px;
+  }
+  .talks h3{
+    font-size: 20px;
+    margin: 0;
+  }
+  .talks h3 span{
+    font-size: 30px;
+  }
+  .talks p{
+    font-size: 15px;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+}
+.left-sidebar{
+  position: fixed; 
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 266px;
+  z-index: 10;
+}
+.main-content {
+  margin-left: 266px; /* Match the width of the sidebar */
+  width: 104%; /* Adjust width to account for sidebar */
+}
+.chan h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.search{
+  width: 30%;
+  height: 50px;
+}
+.search input{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.bod{
+  border: 1px solid rgba(167, 165, 165, 0.349);
+}
+.bod tr th{
+  border: 1px solid rgba(167, 165, 165, 0.349);
+}
+@media screen and (max-width: 768px) {
+  .together{
+    font-size: 22px;
+  }
+  .left-sidebar{
+    position: relative;
+    width: 100%;
+    
+  }
+  .main-content{
+    margin-left: 0;
+    width: 100%;
+  }
+  .bod{
+    font-size: 16px;
+  }
+  .bod tr td{
+    font-size: 16px;
+  }
+}
