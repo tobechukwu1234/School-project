@@ -216,7 +216,7 @@ function Dashboard(){
             </table>
           </div>
 
-          <div className="flex justify-between items-center mb-8 px-10">
+          <div className="flex justify-between items-center mb-8 px-10 me:text-sm lg:text-md">
             <div>
               <p className="underline text-gray-500 font-bold">Copyright © Chronicles International Sch</p>
             </div>
