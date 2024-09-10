@@ -41,7 +41,7 @@ function Register(){
  
 
   function createStudent(){
-    const newObject = {name: username, passcode: password}
+    const newObject = {name: username, passcode: password, firsname: firstname, lasname: lastname}
     setObject(newObject)
 
     localStorage.setItem('userInfo', JSON.stringify(newObject))

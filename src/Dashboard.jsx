@@ -4,7 +4,8 @@ function Dashboard(){
 
   const storedUserInfo = localStorage.getItem('userInfo')
   const parsedUserInfo = JSON.parse(storedUserInfo)
-
+  
+  
   return(<>
     <div>
       <div className="grid lg:grid-cols-5 h-screen together">
@@ -76,7 +77,7 @@ function Dashboard(){
               </div>
 
               <div>
-                <a href="#" className="text-purple-800 underline">{parsedUserInfo.firstname} {parsedUserInfo.lastname}</a>
+                <a href="#" className="text-purple-800 underline">{parsedUserInfo.firsname} {parsedUserInfo.lasname}</a>
               </div>
 
             </div>
