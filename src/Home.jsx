@@ -11,7 +11,7 @@ function Home(){
 
   return(
     <>
-      <div className="mt-6 lg:mx-8 me:mx-2">
+      <div className="mt-3 lg:mx-8 me:mx-2">
         <div>
           <nav className="flex me:flex-col lg:flex-row lg:justify-center">
 
@@ -92,7 +92,7 @@ function Home(){
       </div>
 
       <div id='about'>
-          <div className='mt-16 lg:mx-32 me:mx-7 text-center'>
+          <div className='just mt-16 lg:mx-32 me:mx-7 text-center'>
             <h1 className='font-bold lg:text-5xl me:text-3xl me:mb-5 lg:mb-10 text-gray-800'>A Tradition of Excellence at <br /> Chronicles International School</h1>
             <p className='mb-5 text-gray-900 text-lg'>Established in 2017 Chronicles International School has a history of providing top notch education and instilling a passion for learning in students. We are proud to offer a combination of Nigerian and international curricula ensuring that our students receive a comprehensive education that equips them for success in an increasingly interconnected world.</p>
             <p className='mb-5 text-gray-900 text-lg'>Our teaching philosophy incorporates the Montessori approach focusing on learning, interactive activities and the cultivation of critical thinking skills from an early stage. This methodology enables students to delve into subjects at their speed while establishing a solid groundwork in fundamental academic disciplines.</p>

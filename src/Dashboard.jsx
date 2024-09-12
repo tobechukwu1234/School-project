@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 function Dashboard(){
 
   const storedUserInfo = localStorage.getItem('userInfo')
-  const parsedUserInfo = JSON.parse(storedUserInfo)
-  
-  
+  let parsedUserInfo = JSON.parse(storedUserInfo)
+
+    const keyName = parsedUserInfo.firsname.slice(0, 1)
+    const keyName2 = parsedUserInfo.lasname.slice(0, 1)
+
+ 
+
   return(<>
     <div>
       <div className="grid lg:grid-cols-5 h-screen together">
@@ -72,8 +77,8 @@ function Dashboard(){
                 </svg>
               </div>
 
-              <div className="bg-purple-800 text-white px-4 py-2 rounded-full">
-                <p>TO</p>
+              <div className="bg-purple-800 text-white px-4 py-2 rounded-full brief">
+                <p>{keyName}{keyName2}</p>
               </div>
 
               <div>

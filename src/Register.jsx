@@ -13,20 +13,31 @@ function Register(){
   const navigate = useNavigate()
   const [error, setError] = useState(false)
   const [passError, setPassError] = useState(false)
+  const [emailError, setEmailError] = useState(false)
 
   async function mainError(){
 
     if(password === '' || username === '' || firstname === '' || lastname === '' || email === '' || confirmPassword === ''){
       setError(true)
+      setTimeout(() => setError(false), 2000)
       return
     }
     setError(false)
    
     if(password !== confirmPassword){
       setPassError(true)
+      setTimeout(() => setPassError(false), 2000)
       return
     }
     setPassError(false)
+
+    if(!email.includes('@')){
+      setEmailError(true)
+      setTimeout(() => setEmailError(false), 2000)
+      return
+    }
+    setEmailError(false)
+    
 
     try{
       await createStudent()
@@ -37,8 +48,6 @@ function Register(){
     }
       
   }
-
- 
 
   function createStudent(){
     const newObject = {name: username, passcode: password, firsname: firstname, lasname: lastname}
@@ -78,6 +87,11 @@ function Register(){
           <input type="text" placeholder="Username"  value={username} onChange={(e) => setUsername(e.target.value)}/>
 
         </div>
+
+        <div className="text-center text-md mb-3 text-red-600 warning">
+          <p   style={{display: emailError ? 'block' : 'none'}} value={emailError}>- Invalid email address</p>
+        </div>
+
         <div className="box mb-8">
           <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}/>
         </div>
