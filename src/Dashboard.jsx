@@ -149,83 +149,81 @@ function Dashboard(){
             <p className="text-3xl">User Review</p>
           </div>
 
-        
-          <div className="lg:px-16 me:px-6 mb-20">
-            <table className="w-full">
-              <thead className="lg:text-sm bod">
-                <tr>
-                  <th className="py-2 px-4 text-left">S/N</th>
-                  <th className="py-2 px-16 text-left">SUBJECTS</th>
-                  <th className="py-2 px-16 text-left">BODY</th>
-                  <th className="py-2 px-16 text-left">EMAIL</th>
-                </tr>
-              </thead>
-              <tbody className="text-sm bg-white">
-                <tr className="border-b">
+        <div className="lg:px-16 me:px-1 mb-20">
+          <table className='w-full'>
+            <thead className='lg:text-sm bod'>
+              <tr>
+                <th className='py-2 px-4 text-left'>S/N</th>
+                <th className='py-2 px-16 text-left'>SUBJECTS</th>
+                <th className='py-2 px-16 text-left'>BODY</th>
+                <th className='py-2 px-16 text-left'>EMAIL</th>
+              </tr>
+            </thead>
+            <tbody className='text-sm bg-white'>
+              <tr className='border-b hover:bg-gray-100'>
                   <td className="py-2 px-4">1</td>
                   <td className="py-2 px-16">General</td>
                   <td className="py-2 px-16 whitespace-normal">I think it is a great app that should help me improve my understanding and knowledge and excel at my exams</td>
                   <td className="py-2 px-16">user@example.com</td>
-                </tr>
-                <tr className="border-b">
+              </tr>
+              <tr className="border-b hover:bg-gray-100">
                   <td className="py-2 px-4">2</td>
                   <td className="py-2 px-16">Uploaded Question</td>
                   <td className="py-2 px-16 whitespace-normal">What is the capital of France? (A) London (B) Berlin (C) Paris (D) Madrid</td>
                   <td className="py-2 px-16">Geography Class</td>
               </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">3</td>
-                <td className="py-2 px-16">Subject</td>
-                <td className="py-2 px-16 whitespace-normal">Mathematics - Algebra, Geometry, Trigonometry</td>
-                <td className="py-2 px-16">Grade 10</td>
+              <tr className='border-b hover:bg-gray-100'> 
+                  <td className="py-2 px-4">3</td>
+                  <td className="py-2 px-16">Subject</td>
+                  <td className="py-2 px-16 whitespace-normal">Mathematics - Algebra, Geometry, Trigonometry</td>
+                  <td className="py-2 px-16">Grade 10</td>
               </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">4</td>
-                <td className="py-2 px-16">Test Taken</td>
-                <td className="py-2 px-16 whitespace-normal">Biology Mid-term Exam - Score: 85%</td>
-                <td className="py-2 px-16">john.doe@student.com</td>
+              <tr className='border-b hover:bg-gray-100'>
+                  <td className="py-2 px-4">4</td>
+                  <td className="py-2 px-16">Test Taken</td>
+                  <td className="py-2 px-16 whitespace-normal">Biology Mid-term Exam - Score: 85%</td>
+                  <td className="py-2 px-16">john.doe@student.com</td>
               </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">5</td>
-                <td className="py-2 px-16">User Review</td>
-                <td className="py-2 px-16 whitespace-normal">The practice quizzes are really helpful. I'd love to see more interactive content!</td>
-                <td className="py-2 px-16">sarah@example.com</td>
+              <tr className="border-b hover:bg-gray-100">
+                  <td className="py-2 px-4">5</td>
+                  <td className="py-2 px-16">User Review</td>
+                  <td className="py-2 px-16 whitespace-normal">The practice quizzes are really helpful. I'd love to see more interactive content!</td>
+                  <td className="py-2 px-16">sarah@example.com</td>
               </tr>
-              <tr className="border-b hover:bg-gray-50">
-                <td className="py-2 px-4">6</td>
-                <td className="py-2 px-16">Uploaded Question</td>
-                <td className="py-2 px-16 whitespace-normal">What is the main function of mitochondria? (A) Protein synthesis (B) Energy production (C) Cell division (D) Waste removal</td>
-                <td className="py-2 px-16">Biology Class</td>
+              <tr className="border-b hover:bg-gray-100">
+                  <td className="py-2 px-4">6</td>
+                  <td className="py-2 px-16">Uploaded Question</td>
+                  <td className="py-2 px-16 whitespace-normal">What is the main function of mitochondria? (A) Protein synthesis (B) Energy production (C) Cell division (D) Waste removal</td>
+                  <td className="py-2 px-16">Biology Class</td>
               </tr>
-                <tr className="border-b hover:bg-gray-50 lg:block me:hidden">
+              <tr className="border-b hover:bg-gray-100">
                   <td className="py-2 px-4">7</td>
                   <td className="py-2 px-16">Test Taken</td>
                   <td className="py-2 px-16 whitespace-normal">Chemistry Final Exam - Score: 92%</td>
                   <td className="py-2 px-16">emma.smith@student.com</td>
-                </tr>
-                <tr className="border-b hover:bg-gray-50 lg:block me:hidden">
+              </tr>
+              <tr className="border-b hover:bg-gray-100">
                   <td className="py-2 px-4">8</td>
                   <td className="py-2 px-16">User Review</td>
                   <td className="py-2 px-16 whitespace-normal">The explanations for complex topics are clear and easy to understand. Great job!</td>
                   <td className="py-2 px-16">michael@example.com</td>
-                </tr>
-                <tr className="border-b hover:bg-gray-50 lg:block me:hidden">
+              </tr>
+              <tr className="border-b hover:bg-gray-100">
                   <td className="py-2 px-4">9</td>
                   <td className="py-2 px-16">Subject</td>
                   <td className="py-2 px-16 whitespace-normal">History - Ancient Civilizations, World Wars, Modern Era</td>
                   <td className="py-2 px-16">Grade 11</td>
-                </tr>
-                <tr className="border-b hover:bg-gray-50 lg:block me:hidden">
+              </tr>
+              <tr className="border-b hover:bg-gray-100">
                   <td className="py-2 px-4">10</td>
-                  <td className="py-2 px-16">Uploaded Question</td>
-                  <td className="py-2 px-16 whitespace-normal">Who wrote the play "Romeo and Juliet"? (A) Charles Dickens (B) William Shakespeare (C) Jane Austen (D) Mark Twain</td>
-                  <td className="py-2 px-16">Literature Class</td>
-                </tr>
-                
+                  <td className="py-2 px-16">Test Taken</td>
+                  <td className="py-2 px-16 whitespace-normal">Physics Mid-term Exam - Score: 78%</td>
+                  <td className="py-2 px-16">linda.brown@student.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
           
-              </tbody>
-            </table>
-          </div>
 
           <div className="flex justify-between items-center mb-8 px-10 me:text-sm lg:text-md">
             <div>
