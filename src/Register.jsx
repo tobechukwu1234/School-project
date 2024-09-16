@@ -14,6 +14,7 @@ function Register(){
   const [error, setError] = useState(false)
   const [passError, setPassError] = useState(false)
   const [emailError, setEmailError] = useState(false)
+  const [numberError, setNumberError] = useState(false)
 
   async function mainError(){
 
@@ -37,7 +38,13 @@ function Register(){
       return
     }
     setEmailError(false)
-    
+
+    if(password.length < 8){
+      setNumberError(true)
+      setTimeout(() => setNumberError(false), 2000)
+      return
+    }
+    setNumberError(false)
 
     try{
       await createStudent()
@@ -95,6 +102,11 @@ function Register(){
         <div className="box mb-8">
           <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}/>
         </div>
+
+        <div className="text-center text-md mb-3 text-red-600 warning">
+          <p   style={{display: numberError ? 'block' : 'none'}} value={numberError}>- Password must be at least 8 characters</p>
+        </div>
+
         <div className="box mb-8">
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
         </div>
