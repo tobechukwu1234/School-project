@@ -462,3 +462,16 @@ footer{
     font-size: 16px;
   }
 }
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: purple;
+}
+.swiper-pagination{
+  margin-top: 60px;
+  
+}
+.swiper-pagination-bullet{
+  color: purple;
+}
+.swiper-pagination-bullet-active{
+  color: purple;
+}
